@@ -13,6 +13,9 @@
 		3E9C02C42B9775EA002D2630 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E9C02C22B9775EA002D2630 /* Main.storyboard */; };
 		3E9C02C62B9775EB002D2630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9C02C52B9775EB002D2630 /* Assets.xcassets */; };
 		3E9C02C92B9775EB002D2630 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E9C02C72B9775EB002D2630 /* LaunchScreen.storyboard */; };
+		3E9C02D22B9778C6002D2630 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9C02D12B9778C6002D2630 /* SnapKit */; };
+		3E9C02D42B9778C6002D2630 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9C02D32B9778C6002D2630 /* SnapKit-Dynamic */; };
+		3E9C02D62B977AF9002D2630 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9C02D52B977AF9002D2630 /* CanvasView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,7 @@
 		3E9C02C52B9775EB002D2630 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E9C02C82B9775EB002D2630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E9C02CA2B9775EB002D2630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E9C02D52B977AF9002D2630 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E9C02D22B9778C6002D2630 /* SnapKit in Frameworks */,
+				3E9C02D42B9778C6002D2630 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,7 @@
 				3E9C02BC2B9775EA002D2630 /* AppDelegate.swift */,
 				3E9C02BE2B9775EA002D2630 /* SceneDelegate.swift */,
 				3E9C02C02B9775EA002D2630 /* ViewController.swift */,
+				3E9C02D52B977AF9002D2630 /* CanvasView.swift */,
 				3E9C02C22B9775EA002D2630 /* Main.storyboard */,
 				3E9C02C52B9775EB002D2630 /* Assets.xcassets */,
 				3E9C02C72B9775EB002D2630 /* LaunchScreen.storyboard */,
@@ -83,6 +90,10 @@
 			dependencies = (
 			);
 			name = CG_Lab2;
+			packageProductDependencies = (
+				3E9C02D12B9778C6002D2630 /* SnapKit */,
+				3E9C02D32B9778C6002D2630 /* SnapKit-Dynamic */,
+			);
 			productName = CG_Lab2;
 			productReference = 3E9C02B92B9775EA002D2630 /* CG_Lab2.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 3E9C02B02B9775EA002D2630;
+			packageReferences = (
+				3E9C02D02B9778C6002D2630 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 3E9C02BA2B9775EA002D2630 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +154,7 @@
 			files = (
 				3E9C02C12B9775EA002D2630 /* ViewController.swift in Sources */,
 				3E9C02BD2B9775EA002D2630 /* AppDelegate.swift in Sources */,
+				3E9C02D62B977AF9002D2630 /* CanvasView.swift in Sources */,
 				3E9C02BF2B9775EA002D2630 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,8 +312,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,8 +338,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,6 +374,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3E9C02D02B9778C6002D2630 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3E9C02D12B9778C6002D2630 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E9C02D02B9778C6002D2630 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		3E9C02D32B9778C6002D2630 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E9C02D02B9778C6002D2630 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3E9C02B12B9775EA002D2630 /* Project object */;
 }
